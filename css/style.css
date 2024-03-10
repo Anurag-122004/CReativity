@@ -148,7 +148,7 @@ nav {
 }
 
 .nav__container a:hover {
-    color: #0077b6;
+    color: #ff4d6d;
     transition: all 800ms ease;
     padding: 0 5px;
 }
@@ -156,7 +156,7 @@ nav {
 .nav__container a:after {
     content: "";
     position: absolute;
-    background-color: #0077b6;
+    background-color: #caf0f8;
     height: 1.8px;
     width: 0;
     left: 0;
@@ -389,6 +389,6 @@ header {
     height: 3rem;
     position: absolute;
     top: -1.5rem;
-    left: 50%;
+    left: 45%;
     transform: rotate(45deg);
 }
