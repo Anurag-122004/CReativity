@@ -12,10 +12,10 @@ faqs.forEach(faq => {
 
         const icon = faq.querySelector(`.faq__icon i`);
 
-        if (icon && icon.className.includes('fa-plus')) {
-            icon.className = 'fa-solid fa-minus';
+        if ( icon && icon.className.includes(`fa-plus`) ) {
+            icon.className = `fa-solid fa-minus`;
         } else {
-            icon.className = 'fa-regular fa-plus';
+            icon.className = `fa-regular fa-plus`;
         }
     })
 })
