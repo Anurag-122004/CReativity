@@ -195,6 +195,28 @@ header {
     font-size: 0.9rem;
 }
 
+
+#headerbtn {  
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    height: 3.5rem;
+    width: 8rem;
+    border: 2px solid var(--color-bg1);
+    color: var(--color-white);
+    transition: all 0.5s ease-out;
+    border-radius: 0.8rem;
+    background: transparent;
+    background: linear-gradient(to right, var(--color-primary) 50%, var(--color-bg) 50%);
+    background-size: 200% 100%;
+    background-position: right;
+}
+
+#headerbtn:hover {
+    background-position: left;
+    cursor: pointer;
+}
+
 /* .header__right-image {
     height: 25rem;
     width: 25rem;
@@ -556,17 +578,16 @@ footer ul li:hover {
     /* ---------------------HEADER------------------- */
 
     header {
-        height: 52vh;
+        height: 60vh;
         margin-bottom: 4rem;
     }
 
     .header__container {
-        
         padding-bottom: 5rem;
     }
 
     .header__right img {
-        height: 16rem;
+        height: 15rem;
     }
 
     /* ----------------------CATEGORIES---------------- */
