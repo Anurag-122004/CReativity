@@ -179,7 +179,7 @@ header {
     top: 5rem;
     overflow: hidden;
     height: 70vh;
-    margin-bottom: 9rem;
+    margin-bottom: 7rem;
 }
 
 .header__container {
@@ -470,6 +470,20 @@ footer ul li:hover {
     }
 
     /* ------------------------NAVBAR STYLING------------------------------ */
+
+    .nav__container a:after {
+        content: "";
+        position: absolute;
+        background-color: #caf0f8;
+        height: 0px;
+        width: 0;
+        left: 0;
+        bottom: 0px;
+    }
+    
+    .nav__container a:hover:after {
+        width: 0;
+    }
     nav button {
         display: inline-block;
         background: transparent;
@@ -482,24 +496,117 @@ footer ul li:hover {
         display: none;
     }
 
+    .material-symbols-outlined {
+        font-size: 2rem;
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+
     .nav__menu {
         position: fixed;
-        top: 5rem;
+        top: 3.9rem;
         right: 5%;
         flex-direction: column;
         height: fit-content;
         width: 18rem;
         gap: 0;
+        display: none;
     }
 
     .nav__menu li {
         width: 100%;
         height: 5.8rem;
+        animation: animatenavItems 1s linear forwards;
+        transform-origin: top right;
     } 
 
-    .nav__menu li a {
-        background: var(bg --color-primary);
-        box-shadow: -4rem 6rem 10rem rgba(0, green, blue, alpha);
+    
+    @keyframes animatenavItems {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        50% {
+            transform: translateY(10%);
+            opacity: 0.5;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
 
+    .nav__menu li a {
+        background: var(--color-primary);
+        box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    .nav__menu li a:hover {
+        background: var(--color-bg2);
+        color: var(--color-white);
+    }
+
+    /* ---------------------HEADER------------------- */
+
+    header {
+        height: 52vh;
+        margin-bottom: 4rem;
+    }
+
+    .header__container {
+        
+        padding-bottom: 5rem;
+    }
+
+    .header__right img {
+        height: 16rem;
+    }
+
+    /* ----------------------CATEGORIES---------------- */
+
+    .categories {
+        height: auto;
+    }
+
+    .categories__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .categories__left {
+        margin-right: 0;
+    }
+
+    /* --------------------------SKILLS IMPROVING COUSRSES SECTION----------------------- */
+
+    .courses {
+        margin-top: 0;
+    }
+
+    .courses__container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* ------------------------FAQS------------------------ */
+
+    .faqs__container {
+        grid-template-columns: 1fr;
+    }
+
+    .faq {
+        padding: 1.5rem;
+    }
+
+    /* -------------------FOOTER------------------------ */
+
+    .footer__container {
+        grid-template-columns: 1fr 1fr;
+    }
 }
