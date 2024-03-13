@@ -1,7 +1,7 @@
 /*--------------NAVBAR scroll -----------*/
 
 window.addEventListener(`scroll`, () => {
-    document.querySelector(`nav`).classList.toggle(`window-scroll`, window.scrollY > 50);
+    document.querySelector(`nav`).classList.toggle(`window-scroll`, window.scrollY > 0);
 })
 
 // -----------------------------FAQ ICON CHANGER--------------------------------
