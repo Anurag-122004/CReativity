@@ -631,3 +631,53 @@ footer ul li:hover {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+/* ------------------media quesries for phone-------------- */
+
+@media screen and (max-width : 600px) {
+
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    /* -------navmenu----------------- */
+
+    .nav__menu {
+        right: 3%;
+    }
+
+    /* --------------------header---------------------------------- */
+
+    header {
+        height: 100vh;
+    }
+
+    .header__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 0;
+        gap: 1rem;
+        /* padding-bottom: 5rem; */
+    }
+
+    #headerbtn {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .header__left p {
+        margin-bottom: 1.2rem;
+    }
+
+    /* ------------CATEGORIES-------------------------------- */
+
+    .categories__right {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .category {
+        padding: 1.5rem;
+        border-radius: 1.2rem;
+    }
+}
