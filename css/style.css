@@ -196,7 +196,7 @@ header {
 }
 
 
-#headerbtn {  
+.headerbtn {  
     margin-top: 0;
     font-size: 1.5rem;
     font-weight: 500;
@@ -212,7 +212,7 @@ header {
     background-position: right;
 }
 
-#headerbtn:hover {
+.headerbtn:hover {
     background-position: left;
     cursor: pointer;
 }

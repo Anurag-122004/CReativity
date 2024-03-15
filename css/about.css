@@ -106,7 +106,7 @@
     background: var(--color-primary);
     border-radius: 1rem 0 0 1rem;
     transform: translateY(-50%);
-    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    box-shadow: 2rem 0 2rem rgba(0, 0, 0, 0.3);
 }
 
 .team__member:hover .team__member-socials {
