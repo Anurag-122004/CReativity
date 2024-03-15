@@ -215,6 +215,7 @@ header {
 .headerbtn:hover {
     background-position: left;
     cursor: pointer;
+    border: none;
 }
 
 /* .header__right-image {
