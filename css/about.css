@@ -75,6 +75,7 @@
     overflow: hidden;
 }
 
+
 .team__member:hover {
     background: transparent;
     border-color: var(--color-primary);
