@@ -27,6 +27,7 @@ html {
     --color-bg1 : #2e3267;
     --color-bg2 : #424890;
 
+
     --container-width-lg : 80%;
     --container-width-md : 90%;
     --container-width-sm : 94%;
@@ -126,7 +127,7 @@ nav {
 }
 
 .window-scroll {
-    background: var(--color-primary);
+    background: var(--color-bg1);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
